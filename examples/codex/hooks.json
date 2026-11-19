@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/sed '1,/^---$/d' \"$HOME/.agents/skills/humanizer-zh/SKILL.md\"",
+            "timeout": 5,
+            "additionalContextLimit": 8000,
+            "statusMessage": "Loading humanizer-zh"
+          }
+        ]
+      }
+    ]
+  }
+}
